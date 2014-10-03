@@ -236,7 +236,7 @@ static void SharedPrintfCode(bool append_pid, const char *format,
   // the stack limit enforced by TSan (-Wframe-larger-than=512). On the other
   // hand, the bigger the buffer is, the more the chance the error report will
   // fit into it.
-  char local_buffer[400];
+  char local_buffer[300];
   int needed_length;
   char *buffer = local_buffer;
   int buffer_size = ARRAY_SIZE(local_buffer);
